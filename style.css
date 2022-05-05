@@ -5,6 +5,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+
 .container {
   background: #ecf4ff;
   color: #1c1c1c;
@@ -101,6 +102,7 @@ body {
     box-shadow:2px 2px 4px rgba(16, 16, 16, 0.42) ;
 }
 
+
 .descricao{
     font-size: 18px;
     text-align: center;
@@ -133,4 +135,30 @@ body {
   background: #1c1c1c;
   color: #ffffff;
   border: 2px solid #f7f7f7;
+}
+
+/* Mobile */
+@media screen and (max-width:768px) {
+  .container{
+  margin: auto;
+  padding: 0;
+}
+  .tema{
+    display: none;
+  }
+
+  .cabecalho, .perfil, .titulo, .projetos-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .redes{
+  gap: 8px;
+  font-size: 16px;
+}
+  .perfil-foto {
+    width: 50%;
+   }
+
 }
